@@ -22,3 +22,10 @@ model Product {
   category    String
 }
 
+model Order {
+  id        Int      @id @default(autoincrement())
+  customer  String
+  total     Float
+  status    String
+  createdAt DateTime @default(now())
+}
