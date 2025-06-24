@@ -3,7 +3,7 @@ const { PrismaClient } = require("@prisma/client");
 const router = express.Router();
 const prisma = new PrismaClient();
 
-router.get("/products", async (req, res) => {
+router.get("/", async (req, res) => {
   console.log("get products");
   const { category, sort } = req.query;
   console.log("Category:", category);
@@ -46,7 +46,7 @@ router.get("/products", async (req, res) => {
 
 
 //CREATE
-router.post("/products", async (req, res) => {
+router.post("/", async (req, res) => {
   console.log(req.body);
   const { name, description, price, image_url, category } = req.body;
   const newProduct = await prisma.product.create({
@@ -62,7 +62,7 @@ router.post("/products", async (req, res) => {
 });
 
 //UPDATE
-router.put("/products/:id", async (req, res) => {
+router.put("/:id", async (req, res) => {
   const { id } = req.params;
   const { name, description, price, image_url, category } = req.body;
   const updatedProduct = await prisma.product.update({
@@ -79,7 +79,7 @@ router.put("/products/:id", async (req, res) => {
 });
 
 //DELETE
-router.delete("/products/:id", async (req, res) => {
+router.delete("/:id", async (req, res) => {
   const { id } = req.params;
   const deletedProduct = await prisma.product.delete({
     where: { id: parseInt(id) },
