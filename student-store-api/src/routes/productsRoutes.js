@@ -4,7 +4,7 @@ const router = express.Router();
 const prisma = new PrismaClient();
 
 router.get("/", async (req, res) => {
-  console.log("get products");
+  //   console.log("get products");
   const { category, sort } = req.query;
   console.log("Category:", category);
   let products;
@@ -16,10 +16,10 @@ router.get("/", async (req, res) => {
         where: {
           category: {
             equals: category,
-            mode: 'insensitive',
+            mode: "insensitive",
           },
         },
-                orderBy: validSortFields.includes(sort)
+        orderBy: validSortFields.includes(sort)
           ? {
               [sort]: "asc",
             }
@@ -35,7 +35,7 @@ router.get("/", async (req, res) => {
       products = await prisma.product.findMany();
     }
 
-    console.log("Products:", products);
+    //console.log("Products:", products);
     res.json(products);
   } catch (err) {
     console.error(err);
@@ -43,11 +43,16 @@ router.get("/", async (req, res) => {
   }
 });
 
-
+router.get("/:id", async (req, res) => {
+  const id = parseInt(req.params.id);
+  const item = await prisma.Product.findUnique({ where: { id } });
+  if (!item) return res.status(404).json({ error: "not found" });
+  res.json(item);
+});
 
 //CREATE
 router.post("/", async (req, res) => {
-  console.log(req.body);
+  //console.log(req.body);
   const { name, description, price, image_url, category } = req.body;
   const newProduct = await prisma.product.create({
     data: {
