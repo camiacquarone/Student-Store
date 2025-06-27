@@ -2,8 +2,6 @@
 
 Submitted by: **Camila Acquarone**
 
-Deployed Application: [Student Store Deployed Site](ADD_LINK_HERE)
-
 ### Application Features
 
 #### CORE FEATURES
@@ -98,9 +96,7 @@ Deployed Application: [Student Store Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
+https://www.loom.com/share/d233ef88228c49f2b6dce3197632a2f3?sid=278031db-32d8-4644-bf89-62f4f1f1acd4 
 
 ### Reflection
 
@@ -114,7 +110,7 @@ I would have loved to have more time to implement the stretch features. They are
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-
+The demo was great. We had less time to present but my presentation was straight to the point. 
 
 ### Shout out
 Shout Out to Dariel, Keith, and Alex for helping throughout the project. 
