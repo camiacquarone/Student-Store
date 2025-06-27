@@ -96,7 +96,7 @@ Submitted by: **Camila Acquarone**
 
 ### Walkthrough Video
 
-https://www.loom.com/share/d233ef88228c49f2b6dce3197632a2f3?sid=278031db-32d8-4644-bf89-62f4f1f1acd4 
+https://www.loom.com/share/776d004d75e74a0883fca36ed8ca464e?sid=b1a85813-0cd1-4257-a98e-7e1115e5a13e 
 
 ### Reflection
 
